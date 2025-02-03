@@ -16,6 +16,8 @@ public class TestPositivo {
         System.out.println(e.getMessage());
     }catch (NumericsException e){
         System.out.println(e.getMessage());
+    }catch (Exception e){
+        System.out.println(e.getMessage());
     }
 }
 }
