@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class TestPositivo {
-    public static void main(String [] args) throws IntervalloException, NegativeException {
+    public static void main(String [] args) throws IntervalloException, NegativeException, NumeroEscluso {
     Scanner t=new Scanner(System.in);
     int numero;
     NumeroPositivo n=new NumeroPositivo();
@@ -13,6 +13,8 @@ public class TestPositivo {
     }catch (NegativeException e) {
         System.out.println(e.getMessage());
     }catch (IntervalloException e){
+        System.out.println(e.getMessage());
+    }catch (NumeroEscluso e){
         System.out.println(e.getMessage());
     }catch (NumericsException e){
         System.out.println(e.getMessage());
