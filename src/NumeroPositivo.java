@@ -1,10 +1,9 @@
 public class NumeroPositivo {
         private int numero;
 
-    public NumeroPositivo() throws NegativeException{
-
+    public NumeroPositivo() throws NegativeException, IntervalloException{
     }
-        public NumeroPositivo(int numero) throws NegativeException{
+        public NumeroPositivo(int numero) throws NegativeException, IntervalloException{
             setNumero(numero);
         }
 
@@ -12,10 +11,10 @@ public class NumeroPositivo {
         return numero;
     }
 
-    public void setNumero(int numero) throws NegativeException{
+    public void setNumero(int numero) throws NegativeException, IntervalloException {
             if(numero<0)
                 throw new NegativeException("numero negativo:(");
-            else if (numero<5 && numero>15) {
+            else if (numero<5 || numero>15) {
                 throw new IntervalloException("fuori dal range:(");
             }else
                 this.numero = numero;

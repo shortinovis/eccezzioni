@@ -1,4 +1,4 @@
-public class IntervalloException extends IllegalArgumentException{
+public class IntervalloException extends NumericsException{
     public IntervalloException(){
         super("Numero fuori dal range!");
     }

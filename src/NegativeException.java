@@ -1,4 +1,4 @@
-public class NegativeException extends IllegalArgumentException{
+public class NegativeException extends NumericsException{
     public NegativeException(){
         super("Numero Negativo!");
     }
